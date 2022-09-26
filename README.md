@@ -3,7 +3,7 @@ A JavaScript Multiple Choice Quiz Web Application
 
 ## Background
 
-# This web application written with JavaScript will test your JavaScript knowledge!
+## This web application written with JavaScript will test your JavaScript knowledge!
 
 [View my FullStack Quiz Application on Github Pages](https://samdemarco.github.io/fullstackQuiz/)
 
@@ -15,13 +15,13 @@ This was definitely challenging. I spent a lot of time first thinking through th
 
 Modify starter code provided to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-# User Story 
+## User Story 
 
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 
-# Acceptance Criteria
+## Acceptance Criteria
 
 GIVEN I am taking a code quiz
 WHEN I click the start button
