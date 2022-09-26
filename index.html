@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Full Stack Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- PLACE "VIEW HIGH SCORES" TO THE LEFT AND TIMER TO THE RIGHT SIMILAR TO MOCKUP -->
+  <header>
+
+    <div class="card timer">
+      <h2> <span class="timer-text large-font timer-count"></span> </h2>
+    </div>
+    <div class="card highScore">
+      <h2 class="timer-text larger-font" id="highScoreHeader" onclick="showHighscore()">View High Scores </h2>
+    </div>
+  </header>
+
+  <main>
+    <!-- THIS SECTION WILL PROMPT USER TO "BEGIN QUIZ"' -->
+
+    <!-- THIS SECTION WILL CONTAIN QUESTIONS AND OPTIONS -->
+    <section>
+      </div>
+      <div class="startQuiz-container" id="startQuiz" style="visibility:visible;">
+        <h2>Coding Quiz Challenge</h2>
+        <p>Try to answer the following code-related questions within the time limit.<br>
+          Keep in mind that incorrect answers will penalize your score/time by ten seconds!<br>
+          Each question answered correctly is worth 10 points.
+        </p>
+      </div>
+      <button class="optionStart" onclick="" id="start" style="visibility:visible;">Start Quiz</button>
+
+      <div class="question-container" id="question" style="visibility:hidden;">
+        Question goes here.
+      </div>
+
+      <!-- THIS SECTION WILL CONTAIN "CORRECT" OR "WRONG" RESULT PER QUESTION -->
+
+      <div class="option-container" id="options" style="visibility:hidden;">
+        <button class="option" id="op1" onclick="checkAnswer('a')">A</button>
+        <button class="option" id="op2" onclick="checkAnswer('b')">B</button>
+        <button class="option" id="op3" onclick="checkAnswer('c')">C</button>
+        <button class="option" id="op4" onclick="checkAnswer('d')">D</button>
+      </div>
+      <!-- ADD CORRECT OR WRONG RESULT TEXT    -->
+      <div class="result-container" id="result" style="visibility:hidden;">
+      </div>
+      <div class="allDone-container" id="allDone" style="visibility:hidden;">
+        <div>
+          <h2>All Done!</h2>
+          <p>Your final score is:<span class="finalScore"> </span></p>
+          <input type="text" size="40" placeholder="Enter you initials for high score" name="intials" id="initials" />
+          <button class="submit" id="submitButton">Submit</button>
+        </div>
+      </div>
+      <div class="highScore-container" id="highScores" style="visibility:hidden;">
+        <h3>High Scores</h3>
+        <ul id="highScoreList" style="list-style: none;"></ul>
+        <button class="highScoreBtnBack" id="highScoreGoBack" onclick="replayQuiz()">Go Back</button>
+        <button class="highScoreBtnClear" id="highScoreClear" onclick="clearScore()">Clear High Scores</button>
+      </div>
+      </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
